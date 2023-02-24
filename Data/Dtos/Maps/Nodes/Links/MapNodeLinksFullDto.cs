@@ -22,9 +22,9 @@ namespace OLabWebAPI.Dto
         public bool? Hidden { get; set; }
         [JsonProperty("thickness")]
         public int? Thickness { get; set; }
-        [JsonProperty("line_type")]
+        [JsonProperty("lineType")]
         public int? LineType { get; set; }
-        [JsonProperty("follow_once")]
+        [JsonProperty("followOnce")]
         public int? FollowOnce { get; set; }
     }
 }

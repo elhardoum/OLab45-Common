@@ -29,6 +29,7 @@ namespace OLabWebAPI.Dto
     public string Conditional { get; set; }
     public string ConditionalMessage { get; set; }
     public string Info { get; set; }
+    [JsonProperty("color")]
     public string Rgb { get; set; }
     public string Text { get; set; }
     public uint? LinkStyleId { get; set; }
