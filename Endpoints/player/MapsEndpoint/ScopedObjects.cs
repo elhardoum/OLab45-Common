@@ -51,7 +51,7 @@ namespace OLabWebAPI.Endpoints.Player
           uint id,
           bool enableWikiTranslation)
         {
-            Maps map = GetSimple(dbContext, id);
+            var map = await _mapRepo.GetAsync(id);
             if (map == null)
                 throw new OLabObjectNotFoundException(Utils.Constants.ScopeLevelMap, id);
 

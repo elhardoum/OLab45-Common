@@ -1,6 +1,7 @@
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using OLab.Repository;
 using OLabWebAPI.Common.Exceptions;
 using OLabWebAPI.Data.Exceptions;
 using OLabWebAPI.Data.Interface;
@@ -19,12 +20,14 @@ namespace OLabWebAPI.Endpoints.Designer
 {
   public partial class MapsEndpoint : OlabEndpoint
   {
+    private readonly IMapRepository _repo;
 
     public MapsEndpoint(
       OLabLogger logger,
       IOptions<AppSettings> appSettings,
       OLabDBContext context) : base(logger, appSettings, context)
     {
+      _repo = new MapRepository(logger, context);
     }
 
     /// <summary>
@@ -33,11 +36,11 @@ namespace OLabWebAPI.Endpoints.Designer
     /// <param name="context"></param>
     /// <param name="id"></param>
     /// <returns></returns>
-    private static Model.Maps GetSimple(OLabDBContext context, uint id)
-    {
-      Maps phys = context.Maps.Include(x => x.SystemCounterActions).FirstOrDefault(x => x.Id == id);
-      return phys;
-    }
+    //private static Model.Maps GetSimple(OLabDBContext context, uint id)
+    //{
+    //  Maps phys = context.Maps.Include(x => x.SystemCounterActions).FirstOrDefault(x => x.Id == id);
+    //  return phys;
+    //}
 
     /// <summary>
     /// Plays specific map node
@@ -244,7 +247,7 @@ namespace OLabWebAPI.Endpoints.Designer
       uint id,
       bool enableWikiTranslation)
     {
-      Maps map = GetSimple(dbContext, id);
+      var map = await _repo.GetAsync(id);
       if (map == null)
         return null;
 

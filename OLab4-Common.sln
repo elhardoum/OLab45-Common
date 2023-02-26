@@ -1,17 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{C6DE7058-57E0-4CF2-A7CC-A4E3A5AC6F8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{C6DE7058-57E0-4CF2-A7CC-A4E3A5AC6F8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WikiTags", "WikiTags\WikiTags.csproj", "{5FB65959-3532-45BE-9799-1B31633CAB72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WikiTags", "WikiTags\WikiTags.csproj", "{5FB65959-3532-45BE-9799-1B31633CAB72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{4D628F2F-7C04-4D47-AB08-C5C8DA9FCA34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data", "Data\Data.csproj", "{4D628F2F-7C04-4D47-AB08-C5C8DA9FCA34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Import", "Import\Import.csproj", "{4D628F2F-7C04-4D47-AB08-C5C8DA9FCAFF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Import", "Import\Import.csproj", "{4D628F2F-7C04-4D47-AB08-C5C8DA9FCAFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Endpoints", "Endpoints\Endpoints.csproj", "{0D0995EC-8394-41BC-B3AD-29F1CFC1F639}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Endpoints", "Endpoints\Endpoints.csproj", "{0D0995EC-8394-41BC-B3AD-29F1CFC1F639}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repositories", "Repositories\Repositories.csproj", "{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{C6DE7058-57E0-4CF2-A7CC-A4E3A5AC6F8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -86,5 +85,23 @@ Global
 		{0D0995EC-8394-41BC-B3AD-29F1CFC1F639}.Release|x64.Build.0 = Release|Any CPU
 		{0D0995EC-8394-41BC-B3AD-29F1CFC1F639}.Release|x86.ActiveCfg = Release|Any CPU
 		{0D0995EC-8394-41BC-B3AD-29F1CFC1F639}.Release|x86.Build.0 = Release|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Debug|x64.Build.0 = Debug|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Debug|x86.Build.0 = Debug|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Release|x64.ActiveCfg = Release|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Release|x64.Build.0 = Release|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Release|x86.ActiveCfg = Release|Any CPU
+		{5E9BEDD3-6FE6-4CD2-AC1A-8134BC2F83F6}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10405C4C-DFC0-425F-B41D-72B119B31987}
 	EndGlobalSection
 EndGlobal

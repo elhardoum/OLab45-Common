@@ -20,6 +20,7 @@
     <ProjectReference Include="..\Common\Common.csproj" />
     <ProjectReference Include="..\Data\Data.csproj" />
     <ProjectReference Include="..\Import\Import.csproj" />
+    <ProjectReference Include="..\Repositories\Repositories.csproj" />
   </ItemGroup>  
   <!-- <Target Name="PostBuild" AfterTargets="PostBuildEvent">
     <ItemGroup>
